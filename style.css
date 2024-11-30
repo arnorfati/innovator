@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kosugi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700&display=swap');
+
+body {
+    background-color: #f8f9fc;
+    overflow-x: hidden;
+}
+
+#sections {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    pointer-events: none;
+    /* 첫 섹션이 화면 중앙에서 시작하도록 */
+    z-index: 90;
+    padding-top: 30vh;  
+}
+
+.categoryLegend {
+    font-family: "Domine";
+}
+
+.step {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* opacity: 0.1; */
+    transform: translateY(50vh);
+    transition: all 0.5s ease-out;
+    margin-bottom: 100vh;
+    pointer-events: all;
+}
+/* 
+.step.is-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.step.is-leaving {
+    opacity: 0.0;
+    transform: translateY(100px);
+}
+
+
+.step.is-next {
+    transform: translateY(-20px);
+} */
+
+h1, h2 {
+    font-weight: 700;
+    text-align: right;
+    line-height: 32px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+strong {
+    color: rgb(245, 155, 155);
+}
+
+#graphic {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+#vis {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.tick line {
+    stroke: 'red'
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* 툴팁이나 레전드 등 부가 요소들의 위치 조정 */
+#tooltip {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 3px;
+    box-shadow: -3px 3px 15px #939393;
+    color: white;
+    padding: 6px;
+    font-family: "Merriweather";
+    font-size: 1.1em;
+    max-width: 400px;
+    z-index: 100;
+}
+
+#legend, #legend2, #legend3 {
+    position: bottom;
+    left: 50%;
+    top: 50%;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    transform: translateY(0);
+    z-index: 90;
+}
+
+.legend-item {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+svg circle:hover{
+    cursor: pointer;
+}
+
+.swatch {
+    fill: #939393;
+}
+
+.sizeLegend2 {
+    opacity: 0.7
+}
+
+a {
+    color: #168C80;
+    text-decoration: none;
+}
+
+
+/* 부드러운 스크롤 효과 */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* 모바일 화면에 대한 스타일 조정 */
+@media (max-width: 768px) {
+    #graphic {
+        padding: 10px;
+        height: auto; /* 모바일에서 높이를 자동으로 조정 */
+    }
+
+    .step {
+        width: 90%; /* 모바일에서 너비를 줄여 화면에 맞춤 */
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 28px; /* 모바일에서 글자 크기 조정 */
+    }
+
+    h1, h2 {
+        text-align: center; /* 모바일에서 텍스트 중앙 정렬 */
+    }
+}

@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src = 'd3.js'></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js'></script>
+
+    <meta property='og:title' content='MyAssetLab_JaDen'/>
+    <meta property='og:image' content='https://github.com/cuthchow/college-majors-visualisation/blob/master/preview.png'/>
+    <meta property='og:description' content='This interactive, scrollable data visualisation will take you on a journey through all of the different college majors in the United States, and compare how they stack up in terms of median graduate salary, gender ratios, employability, and other factors. '/>
+    <meta property='og:url' content='https://cuthchow.github.io/college-majors-visualisation/'/>
+
+
+    <title>MyAssetLab_JaDen</title>
+</head>
+
+
+<body>
+    <!-- <div id="info">
+        a
+    </div> -->
+    <img src="https://github.com/cuthchow/college-majors-visualisation/blob/master/preview.png" alt="">
+    <div id="tooltip"></div>
+    <div id="graphic">
+        <div id="sections">
+            <section class="step">
+                <div class="title"></div>
+                <br><br>
+                <div class="header-container">
+                    <img src="images/your_image.png" alt="Logo" class="logo">
+                    <h1>My Report</h1>
+                
+                </div>
+                <h2>[똑똑한 은퇴준비편]</h2>
+                <h2><a href = 'https://www.notion.so/Contents-Generation-38af7fd36b994752afde9e70b3f2d501'>By 이노베이터 HA:P조</a></h2>
+                <!-- <p>(Note: If the visualisation doesn't fit your screen, try zooming out with ctrl + - / Cmd + -.) </p> -->
+                <br>
+                <h3>통계청에 따르면, 55세 남성의 <br>평균 금융 자산은 2.7억이라 합니다.</h3>
+                <br>
+                또한, 부부의 2인 노후 생활비는 평균 227만 원이라 합니다.<br><br>
+                
+                <h3>뉴시니어님의 "마이데이터"를 통해 <br> 맞춤형 은퇴설계를 준비해 볼까요?"🤔<br></h3>
+                    <div style="background-color: #1FA698; color: white; padding: 10px; border-radius: 10px;">
+                        <h2 style="text-align: center;"> 스크롤을 내리면 Tip을 알려드려요! </h2>
+                    </div>
+                
+                
+                <br>
+                </p>
+                
+            </section>
+            <section class="step">
+                <p>
+                    <h2> 우선, 뉴시니어님의 자산을 살펴볼까요? </h2>
+                    (마우스를 올리면 상세한 내용을 볼 수 있습니다.👀)<br>
+
+
+                    <h3> 금융 자산을 유형 별 나누면<br> 한눈에 파악하기 용이해요! </h3>
+        
+                
+                첫째줄은 원금보존, 예적금 상품이에요! <br>
+                <br>
+                
+                둘째줄은 적극투자, 신탁/주식 상품이에요! <br>
+                <br>
+
+                셋째줄은 그외 금융 상품이에요! <br>
+                <br>
+                (금융에 관심이 많으시군요!) <br>
+                
+                
+                <!-- <h2>괜찮습니다😎<br>지금 바로 동의하시면 맞춤 리포트를<br> 다시 보내드려요!<br><br>
+                    마이데이터 <a href = 'https://m.kebhana.com/cont/hidden/html/2018/hanaAlimiApp.html'> 연결하러 가기</a>.
+                 -->
+                </h2>
+                </p>
+                <svg id = 'legend2' width = '600px'></svg><br><br>
+                <br><br>
+                <p>
+
+            </section>
+
+            
+
+
+            <section class = 'step'>
+                
+                <h2> 차곡차곡 준비된 연금들 </h2>
+                
+                <h3 >
+                    연금관련 상품을 자세히 보기위해,<br>
+                    투자자성형과 기간을 기준으로 살펴보겠습니다.       </h3>
+                    
+                    
+                    뉴시니어님은 노후 준비 자금이 <br>
+                    또래 보다 32% 더 많습니다!<br>
+                    <br>
+                    • 노후 준비 자산 : 약 5억 2천만 원 <br>
+                    • 수익률 : 약 20.4% <br>
+                    • 퇴직연금 관련 자산 : 약 3억 650만 원<br>
+                    • 만기도래 상품 : ISA, 주거래 월복리적금<br><br>
+                    곧 만기가 돌아오는 상품에 대해 관리가 필요한 시점이네요.<br><br>
+
+
+         
+                <svg id = 'legend2' width = '600px'></svg><br><br>
+            </section>
+            <section class="step">
+                <br><br>
+                <p>
+                    <h2>준비가 잘된 부분은 무엇일까요?</h2>
+
+                    
+                        수익률이 높아 투자 전략이 돋보입니다!<br>
+                        퇴직연금 관련 자산이 안정적인 노후 생활의 기반이 마련되었습니다.<br><br>
+
+                        차곡차곡 준비된 연금들을 잘 활용하면<br>
+                        적절한 시점에 연금개시를 통해 세금을 아낄 수 있습니다!<br>
+
+                        <h3>
+                        연금개시를 할땐 년 1500만원 이내로 설계해야합니다.
+                        </h3>
+                        (걱정마세요! 끝까지 보면, 하나합이 도와드립니다!)
+                    </h3>
+
+
+
+                    
+
+                
+                </p>
+                
+            </section>
+            <section class="step">
+                
+                <p>
+                <h2>준비가 필요한 부분은 무엇일까요?</h2>
+                <h3>유동성 자산 부족 가능성</h3>
+사용자의 자산 중 상당 부분이 장기 투자형 상품에 묶여 있어, 비상금 및 단기 유동성 자산이 부족할 가능성이 있습니다.<br><br>
+	•	따라서, 총 자산의 약 10~20%는 유동성 자산으로 확보가 필요합니다.(예: MMF, 단기채권형 펀드 등).<br><br>
+	특히, 은퇴 후엔 갑작스러운 의료비, 생활비 지출을 대비하기 위해 <b>평가액의 약 10~20%</b>를 유동성 높은 상품으로 
+    전환하는 것을 추천합니다.<br>
+
+    <h2>
+        MMF 상품 살펴보러 가기 <a href = 'https://m.kebhana.com/cont/hidden/html/2018/hanaAlimiApp.html'> 클릭</a>.
+        </h2><br>
+	
+                </p>
+                 
+            </section>
+            
+            <section class="step">
+                <h2> 알뜰하게 연금 개시하기</h2>
+                <h3>
+                    연금 수령 시점과 방식을 최적화하는 전략이 필요합니다.
+                <br><br>
+                현재 퇴직연금(IRP, DC 등)의 비중이 높은데, 수령 시점과 방식(연금형 수령, 일시금 수령 등)을 최적화하는 전략이 필요합니다.
+                <br><br>
+                    일시 수령 보단 연금 개시가 세금을 아낄 수 있어요!<br> <br><span style="color:#03A696">"연간 1500만원 이내로 연금개시"</span>를 맞추면<br> "종합소득과세율이 적용안되어" 절세효과를 볼수 있습니다!
+                <br><br>
+                </h3>
+
+
+            </section>
+            <section class="step">
+                <h2> 마지막으로 </h2>
+                <p>
+                    노후 준비는 단기간에 준비하기 힘들다고 합니다.
+                    주기적으로 관심을 가지고 있어야 하죠.
+                    <br><br>
+                    <h3>
+                    바쁜 일상으로 관리가 힘든 뉴시니어님의 <br>
+                    은퇴준비를 위해 <br>
+                    하나 더 넥스트가 준비되어있습니다.<br>
+                    </h3>
+                    <h2>
+                    하나더 넥스트 바로가기 <a href = 'https://m.kebhana.com/cont/hidden/html/2018/hanaAlimiApp.html'> 신청하기</a>.
+                    </h2><br>
+
+                    <br>
+                </p>
+                <svg id = 'legend3' width = '400px' height = '350px'></svg>
+                
+                
+            </section>
+<!-- 
+            <section class="step">
+                <h1>마지막으로</h1>
+                <p>
+                    슬기로운 소비생활을 위해 자산관리 연구소에서 제안된 내용들을 살펴볼까요?
+                    <br><br>
+                    
+                    <h2>매월 지출 리포트 Push 알람 설정 <a href = 'https://m.kebhana.com/cont/hidden/html/2018/hanaAlimiApp.html'> 클릭</a></h2>
+                    
+                    <h2>스타벅스 e카드 구독서비스 등록 <a href = 'https://m.kebhana.com/cont/hidden/html/2018/hanaAlimiApp.html'> 클릭</a></h2>
+                    
+                    <h2>연말 정산을 위한 소비분석이 필요한가요? <a href = 'https://m.kebhana.com/cont/hidden/html/2018/hanaAlimiApp.html'> 클릭</a></h2>
+                    
+                    <br>
+                    <h2>지출 유형이 적은가요?<br>카드 데이터를 연동 하면 더 풍부한<br> 지출 분석을 해드립니다!<a href = 'https://m.kebhana.com/cont/hidden/html/2018/hanaAlimiApp.html'> 클릭</a></h2>
+                    <br><br>
+                
+                </p>
+                <span></span><span></span><span></span>                
+            </section> -->
+           
+
+        </div>
+        <div id="vis">
+
+        </div>
+    </div>
+
+    
+
+    
+    <script src = 'scroller.js'></script>
+    <script src = 'sections.js'></script>
+
+</body>
+</html>
